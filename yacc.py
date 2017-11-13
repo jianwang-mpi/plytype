@@ -1210,6 +1210,7 @@ class LRParser:
                             lookahead = tok
                             errtoken = None
                             continue
+                        raise Exception
                     else:
                         if errtoken:
                             if hasattr(errtoken, 'lineno'):
